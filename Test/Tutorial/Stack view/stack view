@@ -1,1 +1,9 @@
+스택 자료구조 / navigation controller / stack view
 
+스택이 활용된 스택뷰, 그리고 ios 에서 화면전환에 사용되는 navigation controller 의 스택 구조
+
+- 스택에 대한 설명
+- 빨래 바구니
+- 스택뷰
+- push(삽입), pop(삭제)
+- 네비게이션 컨트롤러의 스택 
