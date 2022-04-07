@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AlertPopUpVC" id="Y6W-OH-hqX" customClass="CustomPopUpViewController" customModule="CustomPupup_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbB-az-ytf" userLabel="BGBtm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="bgBtnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zZn-sS-R6n"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5i-iO-Prv" userLabel="contentView">
+                                <rect key="frame" x="82" y="298" width="250" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JUMBOS" translatesAutoresizingMaskIntoConstraints="NO" id="Umx-iQ-Hl2">
+                                        <rect key="frame" x="65" y="20" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Ff1-Wv-LIC"/>
+                                            <constraint firstAttribute="width" constant="120" id="kdf-24-Fsg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHq-hb-JpP">
+                                        <rect key="frame" x="100.5" y="164" width="49" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KOREAN AIR JUMBOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prq-La-bR2">
+                                        <rect key="frame" x="40" y="193" width="170" height="21"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="4GA-hE-NsK"/>
+                                    <constraint firstItem="Prq-La-bR2" firstAttribute="centerX" secondItem="C5i-iO-Prv" secondAttribute="centerX" id="7Pr-Xr-Uc2"/>
+                                    <constraint firstItem="SHq-hb-JpP" firstAttribute="top" secondItem="Umx-iQ-Hl2" secondAttribute="bottom" constant="24" id="IRg-zx-V8i"/>
+                                    <constraint firstAttribute="height" constant="300" id="Khx-zY-uhK"/>
+                                    <constraint firstItem="Prq-La-bR2" firstAttribute="top" secondItem="SHq-hb-JpP" secondAttribute="bottom" constant="8" id="Kpw-6k-pyk"/>
+                                    <constraint firstItem="Umx-iQ-Hl2" firstAttribute="top" secondItem="C5i-iO-Prv" secondAttribute="top" constant="20" id="UW4-9Q-5tX"/>
+                                    <constraint firstItem="SHq-hb-JpP" firstAttribute="centerX" secondItem="C5i-iO-Prv" secondAttribute="centerX" id="tmh-gB-HBL"/>
+                                    <constraint firstItem="Umx-iQ-Hl2" firstAttribute="centerX" secondItem="C5i-iO-Prv" secondAttribute="centerX" id="yTq-fu-fPY"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdO-2e-LX3">
+                                <rect key="frame" x="147" y="549" width="120" height="32"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9VN-z5-lfC"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="WELCOME!!!">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="welcomBtnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="g8b-qE-Edx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64873758951822913" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FbB-az-ytf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="FwW-up-efJ"/>
+                            <constraint firstItem="C5i-iO-Prv" firstAttribute="bottom" secondItem="IdO-2e-LX3" secondAttribute="bottom" constant="17" id="NTB-r7-jfi"/>
+                            <constraint firstItem="C5i-iO-Prv" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="bQT-so-epx"/>
+                            <constraint firstItem="C5i-iO-Prv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gyQ-7C-tM6"/>
+                            <constraint firstItem="FbB-az-ytf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mpr-xd-7S2"/>
+                            <constraint firstItem="FbB-az-ytf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qTi-xo-EXS"/>
+                            <constraint firstItem="IdO-2e-LX3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tcy-CQ-3GZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="FbB-az-ytf" secondAttribute="bottom" id="zE4-BO-vwF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgBtn" destination="FbB-az-ytf" id="7N4-wk-Wid"/>
+                        <outlet property="contentView" destination="C5i-iO-Prv" id="9nF-Uj-ls7"/>
+                        <outlet property="welcomBtn" destination="IdO-2e-LX3" id="ZrS-Ar-coQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JUMBOS" width="205.5" height="131.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
