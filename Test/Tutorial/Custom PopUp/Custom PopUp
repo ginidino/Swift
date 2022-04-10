@@ -1,0 +1,36 @@
+IOS event 전달
+- Completion Block Closure
+- protocol Delegate
+- notification center
+
+————————————————————————————————————————————————————————
+
+iOS Dev storyboard UIkit custom dialog popup webview
+
+내용
+- UIKit
+- 컴플레션 블럭
+- 클로저
+- 비동기 통신 
+- swift 
+- 커스텀 다이얼로그 
+- webkit 
+
+————————————————————————————————————————————————————————
+
+iOS Dev UIkit protocol delegate pattern
+
+내용
+- protocol
+- delegate
+
+————————————————————————————————————————————————————————
+
+iOS Dev UIkit notification center
+
+내용
+- 이벤트 전달
+- notification center
+
+notification center는 항상 event를 수신
+notification center를 등록을 했으면 등록 해제도 반드시 해줘야 한다
