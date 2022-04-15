@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PagerView_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-KD-7AK" userLabel="PagerContainer">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZc-lo-hr5" userLabel="PagerView" customClass="FSPagerView" customModule="FSPagerView">
+                                        <rect key="frame" x="0.0" y="259" width="414" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="BBe-kj-oFV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tON-ZN-Wa1" userLabel="PageControl" customClass="FSPageControl" customModule="FSPagerView">
+                                        <rect key="frame" x="30" y="574" width="354" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hy8-Gx-eXZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tON-ZN-Wa1" firstAttribute="leading" secondItem="MKb-KD-7AK" secondAttribute="leading" constant="30" id="98Y-fE-gtl"/>
+                                    <constraint firstItem="TZc-lo-hr5" firstAttribute="centerY" secondItem="MKb-KD-7AK" secondAttribute="centerY" id="9Bs-tb-9lk"/>
+                                    <constraint firstItem="tON-ZN-Wa1" firstAttribute="top" secondItem="TZc-lo-hr5" secondAttribute="bottom" constant="15" id="YYr-hV-TGK"/>
+                                    <constraint firstItem="TZc-lo-hr5" firstAttribute="leading" secondItem="MKb-KD-7AK" secondAttribute="leading" id="bPx-ju-5fx"/>
+                                    <constraint firstAttribute="trailing" secondItem="tON-ZN-Wa1" secondAttribute="trailing" constant="30" id="uPh-fh-hCX"/>
+                                    <constraint firstAttribute="trailing" secondItem="TZc-lo-hr5" secondAttribute="trailing" id="w2q-A3-UxU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGQ-bn-WmS">
+                                <rect key="frame" x="30" y="433" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="XWw-zP-HgG"/>
+                                    <constraint firstAttribute="height" constant="30" id="cCZ-Et-wSw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="leftBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="us1-vJ-Sbj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpk-sL-Sdd">
+                                <rect key="frame" x="354" y="433" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4BS-dP-gFG"/>
+                                    <constraint firstAttribute="height" constant="30" id="7LF-eI-le4"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="rightBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYX-FY-awS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MKb-KD-7AK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1Kh-3O-NSM"/>
+                            <constraint firstItem="MKb-KD-7AK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BjX-oz-YA9"/>
+                            <constraint firstItem="wGQ-bn-WmS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LG5-Co-RGo"/>
+                            <constraint firstItem="MKb-KD-7AK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PBX-rL-Y3e"/>
+                            <constraint firstItem="wGQ-bn-WmS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="QKe-Sg-fRn"/>
+                            <constraint firstItem="lpk-sL-Sdd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YkU-fw-XKm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lpk-sL-Sdd" secondAttribute="trailing" constant="30" id="gwA-NI-4d3"/>
+                            <constraint firstItem="MKb-KD-7AK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yp9-BI-D4e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftBtn" destination="wGQ-bn-WmS" id="9Dg-zc-fO3"/>
+                        <outlet property="myPageControl" destination="tON-ZN-Wa1" id="55q-6a-W8s"/>
+                        <outlet property="myPagerView" destination="TZc-lo-hr5" id="ezQ-Dh-4mq"/>
+                        <outlet property="rightBtn" destination="lpk-sL-Sdd" id="IR9-Yd-SO4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
