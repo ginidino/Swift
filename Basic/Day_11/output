@@ -1,0 +1,23 @@
+sayHi() called
+2seconds have passed 1
+sayHi() called
+2seconds have passed 2
+sayHi() called
+2seconds have passed 3
+sayHiwithName() called
+2seconds later, he said  Hi?
+sayHiwithName() called
+2seconds later, he said  Hi?
+sayHiwithName() called
+2seconds later, he said  Hi?
+sayHiwithName() called
+2seconds later, he said  Hi?
+sayHiwithFullName() called
+1st : Hi?, 2nd : Welcome
+sayHiwithFullName() called
+2nd : Welcome
+sayHiwithFullName() called
+1st : Hi?, 2nd : Welcome
+sayHioptional() called
+sayHioptional() called
+Hello
