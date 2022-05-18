@@ -2,6 +2,8 @@
 
   Struct method
 
+  code:
+
 ```swift
 import UIKit
 
