@@ -53,4 +53,11 @@ print("title: \(titled)")
   output
 
 ```
+This is Dark Mode
+This is Dark Mode
+This is Dark Mode
+This is Dark Mode
+title: This is Dark Mode
+title: This is Dark Mode
+title: This is not Dark Mode
 ```
