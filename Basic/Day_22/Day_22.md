@@ -2,6 +2,8 @@
 
   Protocol Inheritance
 
+  code:
+
 ```swift
 import UIKit
 
