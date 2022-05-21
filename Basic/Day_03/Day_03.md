@@ -1,6 +1,6 @@
 # Day_3
 
-  Divide enum cases
+  Divide enum cases     
     - enum : divide type
 
   code: 
