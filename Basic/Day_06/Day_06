@@ -1,9 +1,0 @@
-Day_6
-Class vs Struct
-
-Struct
-  * Memberwise initializer is good It's good because you don't have to make a generator
-
-Class
-  * class 같은 경우에는 생성자를 만들어 줘야 한다 (생성: 메모리에 올린다)
-  * Init으로 매개변수를 가진 생성자 method를 만들어야 매개변수를 넣고 객체 생성이 가능
