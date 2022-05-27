@@ -1,3 +1,0 @@
-someArray myArray<Int>(elements: [1, 2, 3])
-someArray myArray<String>(elements: ["a", "b", "c"])
-someArray myArray<Friend>(elements: [__lldb_expr_31.Friend(name: "Anthony"), __lldb_expr_31.Friend(name: "Paul"), __lldb_expr_31.Friend(name: "David")])
