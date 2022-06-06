@@ -1,7 +1,7 @@
 import UIKit
 
 // Dictionary - consist of key and value
-// 구성 - key : value
+// Configuration - key : value
 // A pair of dictionaries with key values - similar to lockers
 var myFriend = ["bestfriend" : "Paul", "highSchool" : "Daivd"]
 
@@ -38,7 +38,7 @@ if let highSchoolFriend = myFriend["highSchool"] {
 let youtubeFriend = myFriend["youtube", default: "No Friend"]
 print(youtubeFriend)
 
-// 값을 추가 및 변경 가능
+// Value can be added and changed values
 myFriend["bestfriend"] = "Anthoy"
 let myBF = myFriend["Anthoy", default: "No Friend"]
 print(myBF)
